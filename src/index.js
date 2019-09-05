@@ -10,7 +10,7 @@ $(document).ready(() => {
     const displayWord = (input) => {
       var word = Object.keys(input.word)[0];
       var wordCount = Object.values(input.word)[0];
-      return $('.top-word h3').append(`"${word}", ${wordCount} times`);
+      return $('.top-word h3').empty().append(`Top word from Word Watch API: "${word}", ${wordCount} times`);
     }
 
   $( "#breakdown-button" ).click(function() {
